@@ -66,6 +66,7 @@ movingDiv.addEventListener("mouseenter", function (e) {
   setInterval(() => displayTime(futureDate), 1000);
   countDisplay.style.display = "none";
   countHidden.style.display = "block";
+  countHidden.style.animation = "fade-in forwards 0.8s";
   movingDiv.style.position = "static";
 });
 
