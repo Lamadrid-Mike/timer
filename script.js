@@ -6,14 +6,19 @@ const displayDays = document.querySelector(".days");
 const displayHours = document.querySelector(".hours");
 const displayMins = document.querySelector(".minutes");
 const displaySecs = document.querySelector(".seconds");
+const closeBtn = document.getElementById("close__btn");
 
 let x = 0;
 let y = 0;
 let dx = 2;
 let dy = 2;
 
-// moving div interval ------
+closeBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  countHidden.style.display = "none";
+});
 
+// moving div interval ------
 function moveDiv() {
   const containerRect = container.getBoundingClientRect();
   const maxX = containerRect.width - movingDiv.offsetWidth;

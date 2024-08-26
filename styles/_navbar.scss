@@ -78,6 +78,16 @@
 
 .count__hidden {
   display: none;
+  position: relative;
+
+  .close__btn {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    z-index: 5;
+  }
 
   p:first-child {
     font-family: inherit;
@@ -114,6 +124,7 @@
       font-family: inherit;
       font-size: 1.4rem;
       font-weight: 400;
+      z-index: 5;
 
       &:visited {
         color: white;
