@@ -80,6 +80,10 @@
   display: none;
   position: relative;
 
+  &:hover {
+    cursor: default;
+  }
+
   .close__btn {
     position: absolute;
     top: 0px;
@@ -87,6 +91,10 @@
     font-size: 2rem;
     font-weight: bold;
     z-index: 5;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   p:first-child {
