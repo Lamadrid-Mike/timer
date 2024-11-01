@@ -1,0 +1,81 @@
+.btn {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 1.6rem 2.8rem;
+  font-family: inherit;
+  font-size: 1.8rem;
+  border: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.p-text {
+  line-height: 3rem;
+  font-weight: 300;
+  font-family: inherit;
+  font-size: 2rem;
+
+  span {
+    color: orange;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+// mobile
+@media only screen and (max-width: 600px) {
+  .p-text {
+    font-size: 16px;
+  }
+}
+
+.accordion-p-text {
+  line-height: 2.5rem;
+  font-weight: 300;
+  font-family: inherit;
+  font-size: 1.7rem;
+}
+
+// mobile
+@media only screen and (max-width: 600px) {
+  .accordion-p-text {
+    font-size: 16px;
+  }
+}
+
+.header {
+  font-weight: 400;
+  font-size: 2.8rem;
+}
+
+.second__header {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2.3rem;
+  padding-bottom: 1rem;
+}
+
+.header-big {
+  font-size: 5rem;
+  font-weight: 500;
+  font-family: inherit;
+}
+
+.separator {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fade-effect 2s forwards;
+}
+
+@keyframes fade-effect {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,15 @@
+.second__section {
+  display: flex;
+  justify-content: center;
+  padding: 10vh 5vw;
+
+  .section__header {
+    max-width: 550px;
+    min-width: 300px;
+  }
+
+  //mobile
+  @media screen and (max-width: 1000px) {
+    flex-wrap: wrap;
+  }
+}

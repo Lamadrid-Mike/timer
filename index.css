@@ -1,2 +1,470 @@
-@import url("/styles/_main.scss");
-@import url("/styles/_navbar.scss");/*# sourceMappingURL=index.css.map */
+@charset "UTF-8";
+:root {
+  --color-primary: #5815b4;
+  --text-color: #ac7bde;
+}
+
+body {
+  scrollbar-width: thin; /* Can be auto, thin, or none */
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scrollbar-color: #424242 #979595;
+}
+
+.search__box {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 3rem;
+}
+
+.search__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search__container input {
+  height: 35px;
+  width: 50vw;
+  background-color: rgb(31, 31, 31);
+  border: 1px solid grey;
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1.7rem;
+}
+.search__container input:focus {
+  outline: none;
+}
+.search__container input::-moz-placeholder {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 1.7rem;
+}
+.search__container input::placeholder {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 1.7rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.navbar__logo img {
+  width: 100px;
+  height: auto;
+}
+
+.navbar__links a {
+  font-size: 2.1rem;
+  color: inherit;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.header__container {
+  padding: 5rem;
+  text-align: center;
+}
+.header__container h1 {
+  font-size: 4.6rem;
+  font-weight: 400;
+}
+
+.moving__div-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/imgs/sample.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 70vh;
+  width: auto;
+  margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .moving__div-container {
+    height: 28vh;
+    margin-bottom: 0;
+  }
+}
+.moving__div {
+  display: none;
+  z-index: 10;
+  position: absolute;
+}
+.moving__div:hover {
+  cursor: pointer;
+}
+
+.count__display {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.count__hidden {
+  display: none;
+  position: relative;
+}
+.count__hidden:hover {
+  cursor: default;
+}
+.count__hidden .close__btn {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 5;
+}
+.count__hidden .close__btn:hover {
+  cursor: pointer;
+}
+.count__hidden p:first-child {
+  font-family: inherit;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.count__hidden p:last-child {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.count__hidden .count__down-container {
+  text-align: center;
+  display: flex;
+  gap: 1rem;
+}
+.count__hidden .time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 3px solid white;
+  padding: 0.7rem;
+}
+.count__hidden .social__media-container {
+  margin-top: 1px;
+  text-align: right;
+}
+.count__hidden .social__media-container a {
+  color: white;
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  z-index: 5;
+}
+.count__hidden .social__media-container a:visited {
+  color: white;
+}
+.count__hidden .social__media-container a:active {
+  color: white;
+}
+
+.form__container {
+  display: flex;
+  justify-content: center;
+  font-family: inherit;
+}
+.form__container label {
+  font-size: 1.7rem;
+}
+.form__container .btn {
+  font-family: inherit;
+  border: none;
+  border-radius: 17px;
+  padding: 0.4rem 0.7rem;
+}
+
+.btn {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 1.6rem 2.8rem;
+  font-family: inherit;
+  font-size: 1.8rem;
+  border: none;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+.p-text {
+  line-height: 3rem;
+  font-weight: 300;
+  font-family: inherit;
+  font-size: 2rem;
+}
+.p-text span {
+  color: orange;
+}
+.p-text span:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .p-text {
+    font-size: 16px;
+  }
+}
+.accordion-p-text {
+  line-height: 2.5rem;
+  font-weight: 300;
+  font-family: inherit;
+  font-size: 1.7rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .accordion-p-text {
+    font-size: 16px;
+  }
+}
+.header {
+  font-weight: 400;
+  font-size: 2.8rem;
+}
+
+.second__header {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2.3rem;
+  padding-bottom: 1rem;
+}
+
+.header-big {
+  font-size: 5rem;
+  font-weight: 500;
+  font-family: inherit;
+}
+
+.separator {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fade-effect 2s forwards;
+}
+
+@keyframes fade-effect {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.second__section {
+  display: flex;
+  justify-content: center;
+  padding: 10vh 5vw;
+}
+.second__section .section__header {
+  max-width: 550px;
+  min-width: 300px;
+}
+@media screen and (max-width: 1000px) {
+  .second__section {
+    flex-wrap: wrap;
+  }
+}
+
+.third__section {
+  padding: 3rem;
+}
+
+.cards__container {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+.cards__container .card div {
+  padding: 4rem;
+}
+.cards__container p {
+  color: var(--color-primary);
+}
+@media screen and (max-width: 1000px) {
+  .cards__container {
+    flex-wrap: wrap;
+  }
+}
+
+.card {
+  max-width: 350px;
+  min-width: 280px;
+  height: 400px;
+  background-color: rgba(65, 65, 65, 0.288);
+}
+
+.video-background {
+  position: relative;
+  overflow: hidden;
+}
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover; /* Ensures the video fills the div */
+}
+
+.footer__container {
+  display: grid;
+  justify-items: center;
+  padding: 10vh 5vw;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(1, minmax(100px, min-content));
+}
+.footer__container .footer__logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.footer__container .footer__contact {
+  padding: 4rem;
+}
+
+.list__container li {
+  list-style: none;
+}
+.list__container a {
+  font-weight: lighter;
+  font-family: inherit;
+  font-size: 2.2rem;
+  color: white;
+  text-decoration: none;
+  line-height: 3.2rem;
+}
+
+.our-story__container {
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+}
+.our-story__container .picture {
+  padding: 1rem;
+}
+.our-story__container .picture img {
+  max-width: 500px;
+  height: auto;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 900px) {
+  .our-story__container {
+    flex-wrap: wrap;
+  }
+}
+.story__container {
+  max-width: 550px;
+}
+.story__container .story__story {
+  padding: 6%;
+}
+
+.button__container {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.accordion__container .accordion__btn {
+  border: none;
+  font-family: inherit;
+  background: none;
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 14px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  font-size: 2rem;
+  transition: 0.4s;
+}
+.accordion__container .accordion__btn::after {
+  content: "+";
+  color: var(--text-color);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  font-size: 2.5rem;
+}
+
+.active-accordion::after {
+  content: "−";
+  color: var(--text-color);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.panel {
+  padding: 0 18px;
+  color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.our__story-header {
+  height: 73%;
+  margin-bottom: 5%;
+  margin-top: 5rem;
+  display: flex;
+  align-items: flex-end;
+}
+.our__story-header h1 {
+  padding: 3.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .our__story-header {
+    height: 40%;
+  }
+  .our__story-header h1 {
+    font-size: 2.6rem;
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,47 @@
+.third__section {
+  padding: 3rem;
+}
+
+.cards__container {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  .card div {
+    padding: 4rem;
+  }
+
+  p {
+    color: var(--color-primary);
+  }
+
+  //1000width mobile
+  @media screen and (max-width: 1000px) {
+    flex-wrap: wrap;
+  }
+}
+
+.card {
+  max-width: 350px;
+  min-width: 280px;
+  height: 400px;
+  background-color: rgba(65, 65, 65, 0.288);
+}
+
+.video-background {
+  position: relative;
+  overflow: hidden;
+
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Ensures the video fills the div */
+  }
+}
