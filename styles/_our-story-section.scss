@@ -6,7 +6,7 @@
   .picture {
     padding: 1rem;
     img {
-      max-width: 500px;
+      width: 500px;
       height: auto;
       border-radius: 15px;
     }
@@ -17,6 +17,12 @@
 @media only screen and (max-width: 900px) {
   .our-story__container {
     flex-wrap: wrap;
+
+    .picture {
+      img {
+        width: 350px;
+      }
+    }
   }
 }
 

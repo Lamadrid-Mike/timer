@@ -389,7 +389,7 @@ html {
   padding: 1rem;
 }
 .our-story__container .picture img {
-  max-width: 500px;
+  width: 500px;
   height: auto;
   border-radius: 15px;
 }
@@ -397,6 +397,9 @@ html {
 @media only screen and (max-width: 900px) {
   .our-story__container {
     flex-wrap: wrap;
+  }
+  .our-story__container .picture img {
+    width: 350px;
   }
 }
 .story__container {
