@@ -44,7 +44,7 @@
           <a href="">Shop</a>
           <a href="">Faq</a>
           <a href="">Shipping</a>
-          <a href="/pages/contact.html">Contact</a>
+          <a href="pages/contact.html">Contact</a>
         </div>
         <div class="navbar__logo">
           <img
@@ -111,117 +111,53 @@
       </div>
     </div>
 
-    <div class="header__container">
-      <h1>Welcome To Rising Spirit Crystals</h1>
-    </div>
+    <div class="contact__container">
+      <div class="headers__container">
+        <h1 class="header-big">Contact and Inquiry Form</h1>
+        <h3 class="h3__header">
+          Have questions or concerns? Please contact us at:
+          info@risingspiritcrystals.com We do our best to respond to all
+          requests as soon as possible, but please allow 24-48 hours for a
+          response.
+        </h3>
+      </div>
 
-    <div class="moving__div-container">
-      <div class="moving__div">
-        <div class="count__display"></div>
-        <div class="count__hidden">
-          <p>Next Live Event</p>
-          <div id="close__btn" class="close__btn">X</div>
-          <div class="count__down-container">
-            <div>
-              <p class="time days"></p>
-              <p>Days</p>
-            </div>
-            <div>
-              <p class="time hours"></p>
-              <p>Hours</p>
-            </div>
-            <div>
-              <p class="time minutes"></p>
-              <p>Mins</p>
-            </div>
-            <div>
-              <p class="time seconds"></p>
-              <p>Secs</p>
-            </div>
-          </div>
-          <div class="social__media-container">
-            <a
-              target="_blank"
-              href="https://www.instagram.com/RisingSpiritCrystals/"
-              class="social__ig"
-              >Join us on instagram</a
-            >
-          </div>
+      <div class="contact__form">
+        <div class="image">
+          <img src="/imgs/contact.png" alt="crytal-rock" />
         </div>
-      </div>
-    </div>
+        <div class="form__inputs">
+          <form action="/submit" method="post">
+            <input
+              class="form__input"
+              placeholder="Full Name*"
+              type="text"
+              id="name"
+              name="name"
+              required
+            /><br /><br />
 
-    <div class="second__section">
-      <div class="section__header">
-        <h1 class="header">Discover the Magic, Ignite Your Soul</h1>
-        <br />
-        <p class="p-text">
-          Welcome to Rising Spirit Crystals, your gateway to the enchanting
-          world of crystals and their powerful energy. Located in the heart of
-          Brooklyn, New York, we are thrilled to bring you an extraordinary
-          collection of popular and unique crystals, all available for purchase
-          through our captivating Instagram Live sessions.
-        </p>
-        <br />
-        <p class="p-text">
-          At Rising Spirit Crystals, we believe that crystals have the ability
-          to enhance and transform lives. Our carefully curated selection
-          showcases a diverse range of crystals, each possessing its own
-          distinctive beauty and metaphysical properties. Whether you’re seeking
-          crystals for healing, manifestation, spiritual growth, or simply to
-          add a touch of elegance to your space, we have the perfect crystal
-          waiting for you.
-        </p>
-        <br />
-        <button class="btn">Shop All Crystals</button>
-      </div>
-      <div class="section__images">
-        <img src="/imgs/slider-3.jpg" alt="" />
-      </div>
-    </div>
+            <input
+              class="form__input"
+              placeholder="Email*"
+              type="email"
+              id="email"
+              name="email"
+              required
+            /><br /><br />
 
-    <div class="third__section video-background">
-      <video preload="auto" autoplay muted loop>
-        <source src="/videos/video-background.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <div class="header__container">
-        <h1>Why choose Rising Spirit Crystals?</h1>
-      </div>
-
-      <div class="cards__container">
-        <div class="card__1 card">
-          <div>
-            <h2 class="second__header">Rising</h2>
-            <p class="p-text">
-              We’re more than just an online crystal shop. We also offer an
-              immersive and interactive shopping experience through our
-              Instagram live sessions. If you have always wanted to be a part of
-              a community of fun-loving crystal and mineral enthusiasts,
-            </p>
-          </div>
-        </div>
-        <div class="card__2 card">
-          <div>
-            <h2 class="second__header">Spirit</h2>
-            <p class="p-text">
-              We believe that all crystals are tethered to a soul. Whether you
-              are looking for a crystal to support your personal growth and
-              healing or want a home decor piece that speaks to your personal
-              style, we’re here to be your crystal matchmaker.
-            </p>
-          </div>
-        </div>
-        <div class="card__3 card">
-          <div>
-            <h2 class="second__header">Crystals</h2>
-            <p class="p-text">
-              With Rising Spirit Crystals, the crystal you see is the crystal
-              you get. Our team takes great care in photographing and showcasing
-              each crystal’s true essence, ensuring your confident selection.
-              Our crystals are ethically sourced and handpicked with love.
-            </p>
-          </div>
+            <textarea
+              class="form__input"
+              placeholder="Leave Us A Message"
+              id="message"
+              name="message"
+              rows="6"
+              cols="50"
+              required
+            ></textarea
+            ><br /><br />
+            <input type="submit" value="Submit" />
+          </form>
         </div>
       </div>
     </div>
@@ -288,7 +224,7 @@
         >https://risingspiritcrystals.com/</a
       >
     </p>
-    <script type="module" src="./scripts/script.js"></script>
-    <script type="module" src="./scripts/navbar.js"></script>
+    <script type="module" src="../scripts/our-story-page.js"></script>
+    <script type="module" src="../scripts/navbar.js"></script>
   </body>
 </html>

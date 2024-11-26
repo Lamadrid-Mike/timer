@@ -1,0 +1,73 @@
+.headers__container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  padding: 1rem;
+}
+
+.contact__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4%;
+}
+
+.h3__header {
+  max-width: 580px;
+}
+
+.image {
+  img {
+    max-width: 550px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .image {
+    img {
+      max-width: 300px;
+      height: auto;
+    }
+  }
+}
+
+.form__input {
+  background-color: black;
+  border: 1px solid grey;
+  border-radius: 3px;
+  width: 340px;
+  padding: 1rem;
+  color: white;
+  margin: 0.8rem;
+
+  &::placeholder {
+    font-family: inherit;
+    font-size: 1.6rem;
+    color: var(--text-color);
+  }
+
+  &:focus {
+    outline: none;
+    color: white;
+    background-color: black;
+  }
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: rgb(34, 34, 34);
+  color: var(--text-color);
+  padding: 1.5rem;
+  border: none;
+  &:hover {
+    color: white;
+    background-color: var(--color-primary);
+  }
+}

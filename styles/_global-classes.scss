@@ -56,10 +56,27 @@
   padding-bottom: 1rem;
 }
 
+.h3__header {
+  font: inherit;
+  font-weight: 300;
+  font-size: 2.2rem;
+}
+
 .header-big {
   font-size: 5rem;
   font-weight: 500;
   font-family: inherit;
+}
+
+//mobile
+@media only screen and (max-width: 600px) {
+  .header-big {
+    font-size: 2.2rem;
+  }
+
+  .h3__header {
+    font-size: 1.6rem;
+  }
 }
 
 .separator {

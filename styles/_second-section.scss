@@ -8,6 +8,14 @@
     min-width: 300px;
   }
 
+  .section__images {
+    img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+    }
+  }
+
   //mobile
   @media screen and (max-width: 1000px) {
     flex-wrap: wrap;
