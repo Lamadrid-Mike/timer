@@ -7,14 +7,14 @@ openBtn.addEventListener("click", function (e) {
   openTab.style.animation = `forwards 0.4s to-open`;
   setTimeout(() => {
     openTab.style.animationPlayState = "paused";
-  }, 700);
-  bodyElement.style.overflow = "hidden";
+    bodyElement.style.overflow = "hidden";
+  }, 500);
 });
 
 closeBtn.addEventListener("click", function () {
   openTab.style.animation = `forwards 0.4s to-close`;
   setTimeout(() => {
     openTab.style.animationPlayState = "paused";
+    bodyElement.style.overflow = "";
   }, 500);
-  bodyElement.style.overflow = "";
 });

@@ -12,42 +12,101 @@
     <title>Crystals Rising</title>
   </head>
   <body>
-    <div class="search__box">
-      <button class="search__box btn">Instagram Shop Rules</button>
-      <div class="search__container">
-        <input type="text" placeholder="Enter your instagram handle" />
-        <span class="search__icon">
-          <svg
-            class="w-[20px] h-[20px] text-gray-800 dark:text-white"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-width="3"
-              d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
-            />
-          </svg>
-        </span>
-      </div>
-    </div>
-    <div class="navbar__container">
-      <div class="navbar">
-        <div class="navbar__logo">
-          <img class="img__logo" src="/imgs/logo.png" alt="website logo" />
+    <div class="mobile__navbar-container">
+      <div class="mobile__open-tab">
+        <div class="mobile__search-box">
+          <span class="search__icon">
+            <svg
+              class="w-[20px] h-[20px] text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="3"
+                d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
+              />
+            </svg>
+          </span>
+          <input type="text" placeholder="Enter your instagram handle" />
+          <div class="close__btn">
+            <img src="/icons/close-btn.svg" alt="close-btn" />
+          </div>
         </div>
         <div class="navbar__links">
           <a href="/index.html">Home</a>
-          <a href="/pages/our-story.html">Our Story</a>
+          <a href="">Our Story</a>
           <a href="">Shop</a>
           <a href="">Faq</a>
           <a href="">Shipping</a>
           <a href="/pages/contact.html">Contact</a>
+        </div>
+        <div class="navbar__logo">
+          <img
+            class="img__logo"
+            width="120px"
+            src="/imgs/logo.png"
+            alt="website logo"
+          />
+        </div>
+      </div>
+      <div class="mobile__closed-tab">
+        <div class="mobile__logo">
+          <img
+            class="img__logo"
+            width="70px"
+            src="/imgs/logo.png"
+            alt="website logo"
+          />
+        </div>
+        <div class="open__btn">
+          <img src="/icons/open-btn.svg" alt="open-btn" />
+        </div>
+      </div>
+    </div>
+    <div class="desktop__navbar-container">
+      <div class="search__box">
+        <button class="search__box btn">Instagram Shop Rules</button>
+        <div class="search__container">
+          <input type="text" placeholder="Enter your instagram handle" />
+          <span class="search__icon">
+            <svg
+              class="w-[20px] h-[20px] text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="3"
+                d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div class="navbar__container">
+        <div class="navbar">
+          <div class="navbar__logo">
+            <img class="img__logo" src="/imgs/logo.png" alt="website logo" />
+          </div>
+          <div class="navbar__links">
+            <a href="/index.html">Home</a>
+            <a href="">Our Story</a>
+            <a href="">Shop</a>
+            <a href="">Faq</a>
+            <a href="">Shipping</a>
+            <a href="/pages/contact.html">Contact</a>
+          </div>
         </div>
       </div>
     </div>
@@ -269,5 +328,6 @@
       >
     </p>
     <script type="module" src="../scripts/our-story-page.js"></script>
+    <script type="module" src="../scripts/navbar.js"></script>
   </body>
 </html>
