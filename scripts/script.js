@@ -93,3 +93,12 @@ fetch(url)
       alert("Pick correct date");
     }
   });
+
+//checking viewport size
+function checkViewport() {
+  const viewPort = window.innerWidth;
+  if (viewPort <= 600) {
+    clearInterval(id);
+  }
+}
+window.addEventListener("resize", checkViewport);

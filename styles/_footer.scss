@@ -32,3 +32,16 @@
     line-height: 3.2rem;
   }
 }
+
+.copyrights__container {
+  text-align: center;
+  padding: 2rem;
+
+  a,
+  p {
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+    font-family: inherit;
+  }
+}

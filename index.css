@@ -176,9 +176,8 @@ html {
 }
 
 @media only screen and (max-width: 600px) {
-  .moving__div-container {
-    height: 28vh;
-    margin-bottom: 0;
+  .count__display {
+    display: none;
   }
 }
 .moving__div {
@@ -302,6 +301,19 @@ html {
     font-size: 16px;
   }
 }
+.p-second__text {
+  font-weight: 300;
+  font-family: inherit;
+  font-size: 1.6rem;
+}
+
+.header__third {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: inherit;
+}
+
 .accordion-p-text {
   line-height: 2.5rem;
   font-weight: 300;
@@ -314,6 +326,14 @@ html {
     font-size: 16px;
   }
 }
+.italic__header {
+  font-family: "Charm", serif;
+  font-weight: 400;
+  font-weight: 300;
+  font-size: 3rem;
+  color: var(--text-color);
+}
+
 .header {
   font-weight: 400;
   font-size: 2.8rem;
@@ -459,6 +479,18 @@ html {
   color: white;
   text-decoration: none;
   line-height: 3.2rem;
+}
+
+.copyrights__container {
+  text-align: center;
+  padding: 2rem;
+}
+.copyrights__container a,
+.copyrights__container p {
+  font-size: 1.3rem;
+  color: white;
+  text-decoration: none;
+  font-family: inherit;
 }
 
 .our-story__container {
@@ -622,4 +654,84 @@ input[type=submit] {
 input[type=submit]:hover {
   color: white;
   background-color: var(--color-primary);
+}
+
+.search-handle__container {
+  display: flex;
+  align-items: center;
+  height: 30vh;
+}
+.search-handle__container .search__handle-box {
+  width: 70%;
+  text-align: center;
+}
+.search-handle__container .search__input-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 30%;
+  align-self: flex-end;
+}
+.search-handle__container .search__input-box input {
+  height: 32px;
+  min-width: 250px;
+  background-color: rgb(31, 31, 31);
+  border: 1px solid grey;
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1.7rem;
+}
+.search-handle__container .search__input-box input:focus {
+  outline: none;
+}
+.search-handle__container .search__input-box input::-moz-placeholder {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 1.7rem;
+}
+.search-handle__container .search__input-box input::placeholder {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 1.7rem;
+}
+
+.step-box {
+  height: 200px;
+  width: 250px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 2fr 1fr;
+}
+
+.grid__box-txt {
+  grid-column: 1/span 2;
+  align-self: flex-start;
+}
+
+.steps__container {
+  margin-top: 5rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.purchase__container {
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+}
+.purchase__container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.h-purchase__container {
+  text-align: center;
+  width: 70%;
 }/*# sourceMappingURL=index.css.map */

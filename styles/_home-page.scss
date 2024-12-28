@@ -22,9 +22,8 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .moving__div-container {
-    height: 28vh;
-    margin-bottom: 0;
+  .count__display {
+    display: none;
   }
 }
 
